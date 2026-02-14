@@ -20,9 +20,5 @@ I download a database that stores the full MKJV bible inside two tables
 The first one is the book table with two columns: an id, and the book name.
 The second table is the verses table with 	5 columns an id, a book_id, a chapter for the chapter number, a verse for the number of the verse, and a text for the content of the verse.
 I downloaded this bible database from here: https://github.com/scrollmapper/bible_databases/blob/master/formats/sqlite/MKJV.db
+I also use the cs50 librairy: https://github.com/cs50/python-cs50
 This project has two folders, a folder called static with the icon of the web page and the css file, a folder templates with all of my html files. These two folders are called like that because I’m using the Flask framework which needs to have these two folders called exactly like that to work correctly. I also have a file called app.py, it’s in this file that I do all of my routing and SQL’s queries and I also have two .db files one which is the bible database I was talking about and the second which is a user database made to stock the different emails from the user so that I can check if the email has already registered or no.
-Demonstration on youtube
-For the CS50 final project you must make a video showing your project, you can find it here:
-https://youtu.be/6h_miTP3thY
-How I want to improve this app:
-In the future I want to make a part of my app where you can read the bible normally, but I also want to put in place a way where you have a list of favorite verses and that you can add every verse you came onto to your favorites
