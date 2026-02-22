@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{%block title%}{{ value }}{% endblock %}
+{% block main %}
+   <header>
+      <h1>Bible Therapy</h1>
+   </header>
+   <main>
+      <h2><u>{{ value }}</u></h2>
+    <ul>
+      <p>
+        {% for verse in verses %}
+        <strong>|<u>{{ verse["name"] }} {{ verse["chapter"] }} : {{ verse["verse"] }}</u></strong>  {{ verse["text"] }}
+        {% endfor %}
+        </p>
+    </ul>
+   </main>
+
+{% endblock %}
